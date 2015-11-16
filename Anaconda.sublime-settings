@@ -320,7 +320,7 @@
     ],
 
     // Maximum line length for pep8
-    "pep8_max_line_length": 79,
+    "pep8_max_line_length": 150,
 
     /*
         You can override the level of PEP8 errors altering this mapping.

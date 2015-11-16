@@ -1011,7 +1011,7 @@ def get_fixed_long_line(target, previous_line, original,
                                            experimental))
 
     if verbose >= 4:
-        print(('-' * 79 + '\n').join([''] + candidates + ['']),
+        print(('-' * 150 + '\n').join([''] + candidates + ['']),
               file=codecs.getwriter('utf-8')(sys.stderr.buffer
                                              if hasattr(sys.stderr,
                                                         'buffer')
@@ -3182,7 +3182,7 @@ def create_parser():
                         '(default: {0})'.format(DEFAULT_IGNORE))
     parser.add_argument('--select', metavar='errors', default='',
                         help='fix only these errors/warnings (e.g. E4,W)')
-    parser.add_argument('--max-line-length', metavar='n', default=79, type=int,
+    parser.add_argument('--max-line-length', metavar='n', default=150, type=int,
                         help='set maximum allowed line length '
                         '(default: %(default)s)')
     parser.add_argument('--range', metavar='line', dest='line_range',

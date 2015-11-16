@@ -66,7 +66,7 @@ class AutoPep8(Command):
                 ','.join(settings.get('autoformat_select')))]
 
         args += ['--max-line-length={}'.format(
-            settings.get('pep8_max_line_length', 79))]
+            settings.get('pep8_max_line_length', 150))]
         args += ['anaconda_rocks']
 
         return args

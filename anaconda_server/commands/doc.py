@@ -43,7 +43,7 @@ class Doc(Command):
 
         self.callback({
             'success': success,
-            'doc': ('<br><br>' if self.html else '\n'+'-'*79+'\n').join(docs),
+            'doc': ('<br><br>' if self.html else '\n'+'-'*150+'\n').join(docs),
             'uid': self.uid
         })
 
